@@ -14,7 +14,7 @@ const Calculator = () => {
       setInput("Error");
     }
     else {
-      const result = eval(input); 
+      const result = eval(input);
       setInput(result.toString()); 
     }
   };
