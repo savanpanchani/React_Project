@@ -12,9 +12,9 @@ const Calculator = () => {
   const calculateResult = () => {
     if (input === "") {
       setInput("Error");
-    }
+    } 
     else {
-      const result = eval(input);
+      const result = eval(input); 
       setInput(result.toString()); 
     }
   };
@@ -28,7 +28,7 @@ const Calculator = () => {
       <div className="calculator">
         <div className="display">
           <input 
-            type="text"
+            type="text" 
             value={input} 
             readOnly 
             className="display-input"
@@ -47,7 +47,6 @@ const Calculator = () => {
          </button>
           ))}
           <button className="calc-button clear" onClick={clearInput}>
-            C
           </button>
           <button className="calc-button equals" onClick={calculateResult}>
             =
