@@ -1,0 +1,90 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Poppins', sans-serif;
+  background-color: #fffdf9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Container Helper */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-color {
+  background-color: #e53935;
+  color: white;
+}
+
+.btn-color:hover {
+  background-color: #c62828;
+}
+
+/* Section Padding */
+section, .section {
+  padding: 60px 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Reusable Classes */
+.fw-bold {
+  font-weight: 700;
+}
+
+.shadow-sm {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.rounded-4 {
+  border-radius: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.p-2 {
+  padding: 10px !important;
+}
+
+/* Responsive Utility */
+@media (max-width: 768px) {
+  .text-end {
+    text-align: left !important;
+  }
+}

@@ -1,0 +1,81 @@
+/* ======= CARD WRAPPER ======= */
+.menu-card {
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* ======= IMAGE ======= */
+.menu-card .image-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu-card .image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover .image-wrapper img {
+  transform: scale(1.05);
+}
+
+/* ======= ITEM NAME ======= */
+.item-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #121619;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.item-name:hover {
+  color: #fd9d3e;
+}
+
+/* ======= INGREDIENTS ======= */
+.ingredients {
+  font-size: 14px;
+  color: #888;
+  margin: 8px 0;
+}
+
+.ingredients span {
+  margin: 0 5px;
+}
+
+/* ======= DESCRIPTION ======= */
+.description {
+  font-size: 14px;
+  color: #888;
+  padding: 0 10px 15px;
+}
+
+/* ======= ORDER NOW ======= */
+.order-now {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fd9d3e;
+  text-transform: uppercase;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.order-now:hover {
+  color: #121619;
+}
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 50px;
+  color: #121619;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #fd9d3e;
+  color: #fff;
+}

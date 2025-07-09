@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+.booking-form-section {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.booking-subtitle {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  color: #fd9d3e;
+  margin-bottom: 10px;
+}
+
+.booking-title {
+  font-size: 60px;
+  font-weight: 800;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+
+.booking-desc {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+
+.booking-phone-box {
+  background-color: #0f1215;
+  border: 8px solid #fd9d3e;
+  padding: 20px 25px;
+  max-width: 400px;
+}
+
+.booking-phone-text {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+input.form-control,
+select.form-control {
+  height: 55px;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+.booking-btn {
+  background-color: #0f1215;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.booking-btn:hover {
+  background-color: #fd9d3e;
+  color: #000;
+}
