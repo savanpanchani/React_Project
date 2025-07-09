@@ -305,7 +305,7 @@
   justify-content: space-between;
 }
 
-/* === Image Wrapper === */
+
 .chef-hover {
   position: relative;
   overflow: hidden;
@@ -348,7 +348,7 @@
   }
 }
 
-/* === Text Info === */
+
 .chef-name {
   font-size: 20px;
   font-weight: 900;
@@ -369,9 +369,9 @@
   color: #fd9d3e;
 }
 
-/* === Responsive Layout for Chef Cards === */
 
-/* For 992px and up – 4 cards per row */
+
+
 @media (min-width: 992px) {
   .chef-cards {
     justify-content: center;
@@ -384,7 +384,7 @@
   }
 }
 
-/* For 768px to 991px – 3 cards per row */
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   .chef-cards {
     justify-content: center;
@@ -397,7 +397,7 @@
   }
 }
 
-/* For 576px to 767px – 1 card centered */
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   .chef-cards {
     justify-content: center;
@@ -410,7 +410,7 @@
   }
 }
 
-/* Below 576px – Horizontal scroll with 1 card */
+
 @media (max-width: 575.98px) {
   .chef-cards {
     flex-wrap: nowrap;
@@ -454,10 +454,10 @@
   .chef-outer {
     flex: 0 0 auto;
     width: 247px;
-    /* 247 * 3 + 2 * 20px gap ≈ 781px (perfect for tablets) */
+
     max-width: 247px;
     min-width: 247px;
-    /* Fix card size */
+    
   }
 
   .chef-img {

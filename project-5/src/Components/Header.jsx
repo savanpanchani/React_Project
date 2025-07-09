@@ -1,73 +1,71 @@
-// https://themes.templatescoder.com/pizzon/html/demo/1-2/02-Classic/reservation.html
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { NavDropdown } from 'react-bootstrap';
-import logo from '../assets/img/header.png';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import { IoCallOutline } from "react-icons/io5";
 import { HiOutlineShoppingBag } from "react-icons/hi";
-import './Header.css'
-
+import logo from '../assets/img/header.png';
+import './Header.css';
 
 const Header = () => {
   return (
-    
-    
-    <Navbar expand="lg" className="sticky-top" style={{backgroundColor: '#121619'}}>
-      <Container fluid className="d-flex justify-content-between align-items-center px-4" style={{ maxWidth: '1200px' }}>
+    <Navbar expand="lg" className="sticky-top" style={{ backgroundColor: '#121619' }}>
+      <Container fluid className="px-4" style={{ maxWidth: '1200px' }}>
         
+
         <Navbar.Brand href="#">
           <img src={logo} alt="header-logo" width={150} />
         </Navbar.Brand>
 
-          <Nav className="index-header">
-            <Nav.Link href="#home"  className="nav-link" style={{ color: 'white' , fontSize:'16px'}}>Home</Nav.Link>
-             <NavDropdown title="Menu" id="menu-dropdown" className="nav-link-custom dropdown-custom">
-            <NavDropdown.Item href="#about-us">Menu list</NavDropdown.Item>
-            <NavDropdown.Item href="#contact">Menu grid</NavDropdown.Item>
-            <NavDropdown.Item href="#shop-grid">Special Pizza</NavDropdown.Item>
-            <NavDropdown.Item href="#404">All pizza</NavDropdown.Item>
-          </NavDropdown>
-            
-            {/* <Nav.Link href="#menu" className="nav-link" style={{ color: 'white' , fontSize:'16px'}}>Menu</Nav.Link> */}
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="ms-auto bg-white" />
 
-             <NavDropdown title="Blog" id="blog-dropdown" className="nav-link-custom dropdown-custom">
-            <NavDropdown.Item href="#blog-left">Blog Leftside</NavDropdown.Item>
-            <NavDropdown.Item href="#blog-right">Blog Rightside</NavDropdown.Item>
-            <NavDropdown.Item href="#blog-detail">Blog Detail</NavDropdown.Item>
-          </NavDropdown>
-            <Nav.Link href="#reservation" className="nav-link" style={{ color: 'white' , fontSize:'16px'}}>Reservation</Nav.Link>
-            
-             <NavDropdown title="Pages" id="pages-dropdown" className="nav-link-custom dropdown-custom">
-            <NavDropdown.Item href="#about-us">About Us</NavDropdown.Item>
-            <NavDropdown.Item href="#contact">Contact</NavDropdown.Item>
-            <NavDropdown.Item href="#shop-grid">Shop Grid</NavDropdown.Item>
-            <NavDropdown.Item href="#404">404</NavDropdown.Item>
-          </NavDropdown>
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-between">
+
+          <Nav className="index-header mx-auto text-center">
+            <Nav.Link href="#home" className="nav-link">Home</Nav.Link>
+
+            <NavDropdown title="Menu" className="nav-link-custom dropdown-custom">
+              <NavDropdown.Item href="#menu-list">Menu List</NavDropdown.Item>
+              <NavDropdown.Item href="#menu-grid">Menu Grid</NavDropdown.Item>
+              <NavDropdown.Item href="#special-pizza">Special Pizza</NavDropdown.Item>
+              <NavDropdown.Item href="#all-pizza">All Pizza</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown title="Blog" className="nav-link-custom dropdown-custom">
+              <NavDropdown.Item href="#blog-left">Blog Leftside</NavDropdown.Item>
+              <NavDropdown.Item href="#blog-right">Blog Rightside</NavDropdown.Item>
+              <NavDropdown.Item href="#blog-detail">Blog Detail</NavDropdown.Item>
+            </NavDropdown>
+
+            <Nav.Link href="#reservation" className="nav-link">Reservation</Nav.Link>
+
+            <NavDropdown title="Pages" className="nav-link-custom dropdown-custom">
+              <NavDropdown.Item href="#about-us">About Us</NavDropdown.Item>
+              <NavDropdown.Item href="#contact">Contact</NavDropdown.Item>
+              <NavDropdown.Item href="#shop-grid">Shop Grid</NavDropdown.Item>
+              <NavDropdown.Item href="#404">404</NavDropdown.Item>
+            </NavDropdown>
           </Nav>
-      
 
-        <div className="d-flex align-items-center gap-3">
-          <div className="d-flex align-items-center text-white phone-icon-hover">
-            <IoCallOutline className="me-2 header-icon" />
-            +91 123 456 789
+          <div className="header-right d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-3 mt-3 mt-lg-0">
+            <div className="d-flex align-items-center text-white phone-icon-hover">
+              <IoCallOutline className="me-2 header-icon" />
+              +91 123 456 789
+            </div>
+            <div className="d-flex align-items-center text-white">
+              <HiOutlineShoppingBag className="me-2 header-icon" />
+              0 items - <span className="ms-1">$0.00</span>
+            </div>
+            <button className="order-button">
+              ORDER ONLINE
+            </button>
           </div>
-          <div className="d-flex align-items-center text-white">
-            <HiOutlineShoppingBag className="me-2 header-icon" />
-            0 items - <span className="ms-1">$0.00</span>
-          </div>
-          <button className="order-button">
-            ORDER ONLINE
-          </button>
-        </div>
 
-       
-       </Container>
-    
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
-   
-
- );
+  );
 };
 
 export default Header;
