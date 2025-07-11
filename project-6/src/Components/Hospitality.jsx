@@ -20,6 +20,7 @@ const Hospitality = () => {
   };
 
   const [formData, setFormData] = useState(initialForm);
+  const [formErrors, setFormErrors] = useState({});
   const [patients, setPatients] = useState(getLocalData());
   const [isEdit, setIsEdit] = useState(false);
 
@@ -33,6 +34,24 @@ const Hospitality = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const errors = {};
+    const { firstname, lastname, email, gender, marital, contact, disease } = formData;
+
+    if (!firstname.trim()) errors.firstname = "First name is required";
+    if (!lastname.trim()) errors.lastname = "Last name is required";
+    if (!email.trim()) errors.email = "Email is required";
+    if (!gender.trim()) errors.gender = "Gender is required";
+    if (!marital.trim()) errors.marital = "Marital status is required";
+    if (!contact.trim()) errors.contact = "Contact is required";
+    if (!disease.trim()) errors.disease = "Disease description is required";
+
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+      return;
+    }
+
+    setFormErrors({});
+
     if (isEdit) {
       const updated = patients.map((p) =>
         p.id === formData.id ? formData : p
@@ -43,6 +62,7 @@ const Hospitality = () => {
       const newEntry = { ...formData, id: Date.now().toString() };
       setPatients([...patients, newEntry]);
     }
+
     setFormData(initialForm);
   };
 
@@ -74,7 +94,11 @@ const Hospitality = () => {
                 placeholder="Enter First Name"
                 value={formData.firstname}
                 onChange={handleChange}
+                isInvalid={!!formErrors.firstname}
               />
+              <Form.Control.Feedback type="invalid">
+                {formErrors.firstname}
+              </Form.Control.Feedback>
             </Col>
             <Col md={6}>
               <Form.Label>Last Name</Form.Label>
@@ -83,9 +107,14 @@ const Hospitality = () => {
                 placeholder="Enter Last Name"
                 value={formData.lastname}
                 onChange={handleChange}
+                isInvalid={!!formErrors.lastname}
               />
+              <Form.Control.Feedback type="invalid">
+                {formErrors.lastname}
+              </Form.Control.Feedback>
             </Col>
           </Row>
+
           <Row className="mb-3">
             <Col md={6}>
               <Form.Label>Email</Form.Label>
@@ -94,7 +123,11 @@ const Hospitality = () => {
                 placeholder="Enter Email"
                 value={formData.email}
                 onChange={handleChange}
+                isInvalid={!!formErrors.email}
               />
+              <Form.Control.Feedback type="invalid">
+                {formErrors.email}
+              </Form.Control.Feedback>
             </Col>
             <Col md={6}>
               <Form.Label>Contact Number</Form.Label>
@@ -103,9 +136,14 @@ const Hospitality = () => {
                 placeholder="Enter Contact"
                 value={formData.contact}
                 onChange={handleChange}
+                isInvalid={!!formErrors.contact}
               />
+              <Form.Control.Feedback type="invalid">
+                {formErrors.contact}
+              </Form.Control.Feedback>
             </Col>
           </Row>
+
           <Row className="mb-3">
             <Col md={6}>
               <Form.Label>Gender</Form.Label>
@@ -113,12 +151,16 @@ const Hospitality = () => {
                 name="gender"
                 value={formData.gender}
                 onChange={handleChange}
+                isInvalid={!!formErrors.gender}
               >
                 <option value="">Select</option>
                 <option>Male</option>
                 <option>Female</option>
                 <option>Other</option>
               </Form.Select>
+              <Form.Control.Feedback type="invalid">
+                {formErrors.gender}
+              </Form.Control.Feedback>
             </Col>
             <Col md={6}>
               <Form.Label>Marital Status</Form.Label>
@@ -126,14 +168,19 @@ const Hospitality = () => {
                 name="marital"
                 value={formData.marital}
                 onChange={handleChange}
+                isInvalid={!!formErrors.marital}
               >
                 <option value="">Select</option>
                 <option>Single</option>
                 <option>Married</option>
                 <option>Divorced</option>
               </Form.Select>
+              <Form.Control.Feedback type="invalid">
+                {formErrors.marital}
+              </Form.Control.Feedback>
             </Col>
           </Row>
+
           <Row className="mb-3">
             <Col>
               <Form.Label>Disease Description</Form.Label>
@@ -144,9 +191,14 @@ const Hospitality = () => {
                 placeholder="Enter disease or reason"
                 value={formData.disease}
                 onChange={handleChange}
+                isInvalid={!!formErrors.disease}
               />
+              <Form.Control.Feedback type="invalid">
+                {formErrors.disease}
+              </Form.Control.Feedback>
             </Col>
           </Row>
+
           <Button type="submit" className="submit-btn">
             {isEdit ? "Update Patient" : "Register Patient"}
           </Button>
