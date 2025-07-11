@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0f1a;
+  background-image: url('../assets/doctor.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+.hospital-wrapper {
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.glass-container {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(25, 25, 25, 0.7);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+
+.form-heading {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px #000;
+  color: #00d9ff;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #eee;
+  font-weight: 500;
+}
+
+.form-control,
+.form-select,
+textarea {
+  background: rgba(40, 40, 40, 0.8);
+  border: 1px solid #444;
+  color: #eee;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.form-select option {
+  background-color: #222;
+  color: #fff;
+}
+
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
+  border-color: #0ef;
+  outline: none;
+  box-shadow: 0 0 0 0.3rem rgba(0, 238, 255, 0.25);
+}
+
+.submit-btn {
+  background-color: #0ef;
+  color: #000;
+  font-weight: 600;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #00d4d4;
+  transform: translateY(-2px);
+}
+
+.card-section {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 30px;
+}
+
+.cards-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.glass-card {
+  background: rgba(15, 15, 15, 0.85);
+  backdrop-filter: blur(8px);
+  color: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.glass-card h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0ef;
+}
+
+.glass-card p {
+  font-size: 14px;
+  color: #ccc;
+  margin: 5px 0;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.glass-card .btn {
+  background-color: #0ef;
+  color: #000;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.glass-card .btn:hover {
+  background-color: #00d4d4;
+}
