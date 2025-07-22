@@ -10,20 +10,20 @@ import {
   Col,
   Pagination,
 } from "react-bootstrap";
-import { useNavigate } from "react-router";
+import { useNavigate, useLocation } from "react-router";
 import "./Home.css";
 
 const Home = () => {
   const [productData, setProductData] = useState([]);
-  const [search, setSearch] = useState("");
   const [sortData, setSortData] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
   const navigate = useNavigate();
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const searchParam = queryParams.get("search");
 
-  const handleEdit = (id) => {
-    navigate(`/edit-product/${id}`);
-  };
+  const handleEdit = (id) => navigate(`/edit-product/${id}`);
 
   const handleDelete = (id) => {
     const data = getStorageData();
@@ -31,8 +31,6 @@ const Home = () => {
     setStorageData(updateData);
     setProductData(updateData);
   };
-
-  const handleChanged = (e) => setSearch(e.target.value);
 
   const handleClear = () => {
     const data = getStorageData();
@@ -59,25 +57,21 @@ const Home = () => {
     setCurrentPage(1);
   };
 
-  const handleSearch = () => {
-    const data = getStorageData();
-    const updateData = data.filter(
-      (prod) =>
-        prod.title.toLowerCase().includes(search.toLowerCase()) ||
-        prod.price.toString() === search ||
-        prod.category.toLowerCase().includes(search.toLowerCase())
-    );
-    setProductData(updateData);
-    setSearch("");
-    setCurrentPage(1);
-  };
-
   useEffect(() => {
     const data = getStorageData();
-    setProductData(data);
-  }, []);
+    if (searchParam) {
+      const updateData = data.filter(
+        (prod) =>
+          prod.title.toLowerCase().includes(searchParam.toLowerCase()) ||
+          prod.price.toString() === searchParam ||
+          prod.category.toLowerCase().includes(searchParam.toLowerCase())
+      );
+      setProductData(updateData);
+    } else {
+      setProductData(data);
+    }
+  }, [searchParam]);
 
-  
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = productData.slice(indexOfFirstItem, indexOfLastItem);
@@ -103,28 +97,10 @@ const Home = () => {
 
   return (
     <Container fluid className="bg-light py-4 min-vh-100">
-      <Container>
+      <div className="px-5">
         <h2 className="text-primary mb-4">Explore Products</h2>
 
         <Row className="mb-4 g-2 align-items-center">
-          <Col md={4}>
-            <Form.Control
-              type="text"
-              placeholder="Search by title, price or category"
-              value={search}
-              onChange={handleChanged}
-            />
-          </Col>
-          <Col md="auto">
-            <Button variant="primary" onClick={handleSearch}>
-              Search
-            </Button>
-          </Col>
-          <Col md="auto">
-            <Button variant="secondary" onClick={handleClear}>
-              Clear
-            </Button>
-          </Col>
           <Col md={3}>
             <Form.Select onChange={(e) => setSortData(e.target.value)}>
               <option>Select Sorting</option>
@@ -141,6 +117,11 @@ const Home = () => {
               Sort
             </Button>
           </Col>
+          <Col md="auto">
+            <Button variant="secondary" onClick={handleClear}>
+              Clear
+            </Button>
+          </Col>
         </Row>
 
         <Row className="g-4">
@@ -154,10 +135,7 @@ const Home = () => {
                   style={{ height: "200px", objectFit: "contain" }}
                 />
                 <Card.Body>
-                  <Card.Title
-                    className="fs-6 text-truncate"
-                    title={product.title}
-                  >
+                  <Card.Title className="fs-6 text-truncate" title={product.title}>
                     {product.title}
                   </Card.Title>
                   <Card.Text className="small">{product.desc}</Card.Text>
@@ -168,18 +146,10 @@ const Home = () => {
                     {product.category}
                   </Badge>
                   <div className="d-flex justify-content-between">
-                    <Button
-                      className="btn-edit"
-                      size="sm"
-                      onClick={() => handleEdit(product.id)}
-                    >
+                    <Button className="btn-edit" size="sm" onClick={() => handleEdit(product.id)}>
                       Edit
                     </Button>
-                    <Button
-                      className="btn-delete"
-                      size="sm"
-                      onClick={() => handleDelete(product.id)}
-                    >
+                    <Button className="btn-delete" size="sm" onClick={() => handleDelete(product.id)}>
                       Delete
                     </Button>
                   </div>
@@ -189,10 +159,8 @@ const Home = () => {
           ))}
         </Row>
 
-        <div className="d-flex justify-content-center mt-4">
-          {renderPagination()}
-        </div>
-      </Container>
+        <div className="d-flex justify-content-center mt-4">{renderPagination()}</div>
+      </div>
     </Container>
   );
 };

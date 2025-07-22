@@ -94,3 +94,22 @@ h2 {
   border-color: #2874f0;
   color: white;
 }
+
+.product-card {
+  transition: transform 0.2s ease-in-out;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.btn-edit {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}
