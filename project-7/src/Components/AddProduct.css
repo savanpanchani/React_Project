@@ -1,0 +1,79 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f3f6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.add-product-container,
+.add-product-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f3f6;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.add-product-card {
+  width: 400px;
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.add-product-card h4,
+.add-product-title {
+  text-align: center;
+  color: #212121;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.add-product-card label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+}
+
+.add-product-card .form-control,
+.add-product-card .form-select {
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid #c2c2c2;
+  background-color: #f8f9fa;
+  color: #212121;
+}
+
+.add-product-card .form-control:focus,
+.add-product-card .form-select:focus {
+  border-color: #2874f0;
+  box-shadow: none;
+}
+
+.add-product-card button[type="submit"],
+.add-product-btn {
+  background-color: #2874f0;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.add-product-card button[type="submit"]:hover,
+.add-product-btn:hover {
+  background-color: #2166d1;
+}
+
+@media (max-width: 480px) {
+  .add-product-card {
+    width: 90%;
+    padding: 20px;
+  }
+}

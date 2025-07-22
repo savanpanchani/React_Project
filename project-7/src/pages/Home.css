@@ -1,0 +1,96 @@
+body {
+  background-color: #f1f3f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-weight: 600;
+  border-left: 5px solid #2874f0;
+  padding-left: 12px;
+  color: #212121;
+}
+
+.product-card {
+  transition: all 0.3s ease-in-out;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(40, 116, 240, 0.1);
+}
+
+.product-card img {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.product-card .card-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #212121;
+}
+
+.product-card .card-text {
+  color: #757575;
+}
+
+.product-card .fw-bold {
+  color: #388e3c;
+  font-size: 1.1rem;
+}
+
+.badge-info {
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.btn-edit {
+  background-color: #2874f0;
+  color: #fff;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-edit:hover {
+  background-color: #1c5dc5;
+}
+
+.btn-delete {
+  background-color: #212121;
+  color: #fff;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-delete:hover {
+  background-color: #000;
+}
+
+.pagination {
+  gap: 5px;
+}
+
+.page-item .page-link {
+  color: #2874f0;
+  border-radius: 5px;
+}
+
+.page-item.active .page-link {
+  background-color: #2874f0;
+  border-color: #2874f0;
+  color: white;
+}

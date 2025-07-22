@@ -1,4 +1,4 @@
-* {
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -78,15 +78,31 @@ textarea:focus {
   box-shadow: 0 0 0 0.3rem rgba(0, 238, 255, 0.25);
 }
 
+.is-invalid {
+  border-color: #ff4d4d !important;
+  background-color: rgba(60, 0, 0, 0.3) !important;
+}
+
+.invalid-feedback {
+  color: #ff4d4d;
+  font-size: 13px;
+  margin-top: 4px;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px #000;
+}
+
 .submit-btn {
   background-color: #0ef;
   color: #000;
   font-weight: 600;
-  padding: 12px 25px;
+  padding: 8px 16px;
+  font-size: 14px;
   border: none;
-  border-radius: 10px;
-  margin-top: 20px;
+  border-radius: 8px;
+  margin: 20px auto 0;
+  display: block;
   transition: all 0.3s ease;
+  width: auto;
 }
 
 .submit-btn:hover {
@@ -118,6 +134,12 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.25);
 }
 
 .glass-card h5 {
@@ -139,16 +161,18 @@ textarea:focus {
 }
 
 .glass-card .btn {
-  background-color: #0ef;
-  color: #000;
-  padding: 6px 14px;
-  border: none;
-  border-radius: 8px;
-  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #0ef;
+  color: #0ef;
+  padding: 4px 10px;
+  font-size: 13px;
+  border-radius: 6px;
   font-weight: 500;
   transition: 0.3s ease;
 }
 
 .glass-card .btn:hover {
-  background-color: #00d4d4;
+  background-color: #0ef;
+  color: #000;
+  transform: translateY(-1px);
 }

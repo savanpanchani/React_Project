@@ -1,0 +1,107 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  border: 1px solid #e0e0e0;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(40, 116, 240, 0.08);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.btn-warning {
+  background-color: #ff9f00;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn-warning:hover {
+  background-color: #fb641b;
+}
+
+body {
+  background-color: #f1f3f6;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #fff !important;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #2874f0 !important;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #212121 !important;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #2874f0 !important;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.form-control:focus {
+  border-color: #2874f0;
+  box-shadow: 0 0 0 0.2rem rgba(40, 116, 240, 0.15);
+}
+
+.read-the-docs {
+  color: #888;
+}

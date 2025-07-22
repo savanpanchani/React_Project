@@ -163,7 +163,7 @@ const Hospitality = () => {
               </Form.Control.Feedback>
             </Col>
             <Col md={6}>
-              <Form.Label>Marital Status</Form.Label>
+              <Form.Label>Marital Status</Form.Label> 
               <Form.Select
                 name="marital"
                 value={formData.marital}
