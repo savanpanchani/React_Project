@@ -1,19 +1,11 @@
 import { useEffect, useState } from "react";
-import { getStorageData, setStorageData } from "../Services/storageData";
-import {
-  Badge,
-  Button,
-  Card,
-  Container,
-  Form,
-  Row,
-  Col,
-  Pagination,
-} from "react-bootstrap";
+import { getStorageData, setStorageData} from "../Services/storageData";
+import {Badge,Button,Card,Container,Form,Row,Col,Pagination,} from "react-bootstrap";
 import { useNavigate, useLocation } from "react-router";
 import "./Home.css";
 
 const Home = () => {
+
   const [productData, setProductData] = useState([]);
   const [sortData, setSortData] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -37,7 +29,7 @@ const Home = () => {
     setProductData(data);
     setCurrentPage(1);
   };
-
+ 
   const handleSorting = () => {
     const data = getStorageData();
     const [field, type] = sortData.split(",");
@@ -83,23 +75,19 @@ const Home = () => {
     let items = [];
     for (let number = 1; number <= totalPages; number++) {
       items.push(
-        <Pagination.Item
-          key={number}
-          active={number === currentPage}
-          onClick={() => handlePageChange(number)}
+        <Pagination.Item key={number} active={number === currentPage} onClick={() => handlePageChange(number)} 
         >
           {number}
-        </Pagination.Item>
+        </Pagination.Item>  
       );
     }
-    return <Pagination>{items}</Pagination>;
+    return <Pagination>{items}</Pagination>; 
   };
 
   return (
     <Container fluid className="bg-light py-4 min-vh-100">
       <div className="px-5">
         <h2 className="text-primary mb-4">Explore Products</h2>
-
         <Row className="mb-4 g-2 align-items-center">
           <Col md={3}>
             <Form.Select onChange={(e) => setSortData(e.target.value)}>
@@ -128,12 +116,7 @@ const Home = () => {
           {currentItems.map((product) => (
             <Col xs={12} sm={6} md={4} lg={3} key={product.id}>
               <Card className="product-card h-100 shadow-sm">
-                <Card.Img
-                  variant="top"
-                  src={product.image}
-                  className="p-3"
-                  style={{ height: "200px", objectFit: "contain" }}
-                />
+                <Card.Img  variant="top" src={product.image} className="p-3" style={{ height: "200px", objectFit: "contain" }}/>
                 <Card.Body>
                   <Card.Title className="fs-6 text-truncate" title={product.title}>
                     {product.title}
@@ -158,7 +141,6 @@ const Home = () => {
             </Col>
           ))}
         </Row>
-
         <div className="d-flex justify-content-center mt-4">{renderPagination()}</div>
       </div>
     </Container>

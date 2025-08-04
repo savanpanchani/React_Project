@@ -1,0 +1,134 @@
+.banner-section {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url('../assets/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 12px 12px;
+  margin-bottom: 30px;
+}
+
+.banner-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.banner-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.banner-subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.search-wrapper {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  background: #f2f2f2;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+}
+
+.search-btn {
+  background-color: #00b853;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #009e47;
+}
+
+.product-card {
+  border-radius: 14px;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #f0f0f0;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transform: translateY(-4px);
+}
+
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  padding: 20px;
+  background-color: #fafafa;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.btn-edit {
+  background-color: #f7c346;
+  border: none;
+  color: #212121;
+}
+
+.btn-edit:hover {
+  background-color: #e2b12e;
+  color: #212121;
+}
+
+.btn-delete {
+  background-color: #ff5e5e;
+  border: none;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background-color: #e34444;
+  color: #fff;
+}
+
+
+@media (max-width: 576px) {
+  .search-wrapper {
+    flex-direction: column;
+    border-radius: 12px;
+  }
+
+  .search-input,
+  .search-btn {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .search-btn {
+    justify-content: center;
+  }
+
+  .banner-title {
+    font-size: 1.6rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1rem;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Navbar, Container, Form, FormControl, Nav } from "react-bootstrap";
+import {Navbar,Form,FormControl,Nav,Dropdown,} from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import { FaShoppingCart, FaUser, FaSearch, FaPlus } from "react-icons/fa";
+import {FaShoppingCart,FaUser,FaSearch,FaPlus,FaSort,} from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 
 import flipkartlogo from "../assets/flipkartlogo.svg";
@@ -10,7 +10,7 @@ import mobiles from "../assets/mobiles.png";
 import fashion from "../assets/fashion.png";
 import electronics from "../assets/electronics.png";
 import home from "../assets/home.png";
-import tv from "../assets/tv.jpg";
+import tv from "../assets/tv.jpg"; 
 import flight from "../assets/flight.png";
 import beauty from "../assets/beauty.png";
 import grocery from "../assets/grocery.png";
@@ -41,9 +41,18 @@ const FlipkartHeader = () => {
     }
   };
 
+  const handleSortChange = (sortValue) => {
+    navigate(`/?sort=${sortValue}`);
+  };
+
   return (
     <>
-      <Navbar bg="light" expand="lg" sticky="top" className="py-2 border-bottom shadow-sm full-width-navbar">
+      <Navbar
+        bg="light"
+        expand="lg"
+        sticky="top"
+        className="py-2 border-bottom shadow-sm full-width-navbar"
+      >
         <div className="container-fluid px-5" style={{ maxWidth: "100%" }}>
           <Navbar.Brand as={Link} to="/" className="d-flex align-items-start me-3">
             <img src={flipkartlogo} alt="Flipkart" height={40} width={160} />
@@ -70,6 +79,21 @@ const FlipkartHeader = () => {
           </Form>
 
           <Nav className="ms-auto align-items-center gap-3">
+            <Dropdown>
+              <Dropdown.Toggle variant="light" className="fw-semibold text-dark d-flex align-items-center">
+                <FaSort className="me-1" />
+                Sort
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item onClick={() => handleSortChange("title,asc")}>Name: A to Z</Dropdown.Item>
+                <Dropdown.Item onClick={() => handleSortChange("title,desc")}>Name: Z to A</Dropdown.Item>
+                <Dropdown.Item onClick={() => handleSortChange("price,asc")}>Price: Low to High</Dropdown.Item>
+                <Dropdown.Item onClick={() => handleSortChange("price,desc")}>Price: High to Low</Dropdown.Item>
+                <Dropdown.Item onClick={() => handleSortChange("category,asc")}>Category: A to Z</Dropdown.Item>
+                <Dropdown.Item onClick={() => handleSortChange("category,desc")}>Category: Z to A</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+
             <Nav.Link as={Link} to="/add-product" className="d-flex align-items-center text-dark fw-semibold">
               <FaPlus className="me-1" />
               Add Product
@@ -90,9 +114,21 @@ const FlipkartHeader = () => {
       <div className="category-bar w-100">
         <div className="container-fluid px-5 d-flex justify-content-between flex-wrap text-center">
           {categories.map((item, index) => (
-            <div key={index} style={{ width: "90px" }} className="d-flex flex-column align-items-center">
-              <img src={item.img} alt={item.label} width={63} height={63} style={{ objectFit: "contain" }} />
-              <span style={{ fontSize: "14px", marginTop: "16px" }}>{item.label}</span>
+            <div
+              key={index}
+              style={{ width: "90px" }}
+              className="d-flex flex-column align-items-center"
+            >
+              <img
+                src={item.img}
+                alt={item.label}
+                width={63}
+                height={63}
+                style={{ objectFit: "contain" }}
+              />
+              <span style={{ fontSize: "14px", marginTop: "16px" }}>
+                {item.label}
+              </span>
             </div>
           ))}
         </div>
