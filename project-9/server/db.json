@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "id": "280935",
+      "title": "Fresh Tomatoes",
+      "desc": "Juicy, ripe tomatoes perfect for salads, cooking, or making sauces.",
+      "price": "80",
+      "category": "vegetables",
+      "image": "https://th.bing.com/th/id/OIP.9mZ52cdk7dd0Hs81BTvD4wHaEK?w=331&h=186&c=7&r=0&o=5&pid=1.7",
+      "unit": "1 kg"
+    },
+    {
+      "id": "760906",
+      "title": "Baby Diapers",
+      "desc": "Soft and comfortable diapers for babies, size L (9-14 kg).",
+      "price": "1010",
+      "category": "baby care",
+      "image": "https://www.bing.com/th?id=OPAC.Cqk16VYlJuJB2g474C474&o=5&pid=21.1&w=148&h=195&rs=1&qlt=100&dpr=1&o=2&bw=6&bc=FFFFFF",
+      "unit": "42 pcs"
+    },
+    {
+      "id": "962187",
+      "title": "Dettol Soap",
+      "desc": "Dettol Original Bathing Bar for 12 hours of germ protection.",
+      "unit": "4 * 100 g",
+      "price": "160",
+      "category": "personal care",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/514a00ed-d6b8-496c-8985-c6aa5855a16b.png"
+    },
+    {
+      "id": "769166",
+      "title": "Chakki Atta",
+      "desc": "Aashirvaad Shudh Chakki Atta, 100% wheat, 0% maida.",
+      "unit": "5 kg",
+      "price": "255",
+      "category": "flour",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/eb35f3ed-7afa-47ed-bef1-db493ff82f0a.png"
+    },
+    {
+      "id": "842575",
+      "title": "Tomato Ketchup",
+      "desc": "Kissan Fresh Tomato Ketchup, tangy and tasty.",
+      "unit": "850 g",
+      "price": "100",
+      "category": "condiments",
+      "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/ae5c2abf-e3c9-4cbc-9cc1-f10fbf709a09.png"
+    },
+    {
+      "id": "620066",
+      "title": "CTC Leaf Tea",
+      "desc": "Jivraj 9 CTC Leaf Tea for a strong and refreshing cup.",
+      "unit": "1 kg",
+      "price": "550",
+      "category": "beverages",
+      "image": "data:image/webp;base64,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"
+    },
+    {
+      "id": "999999",
+      "title": "Amul Butter",
+      "desc": "Amul Pasteurized Butter, made from fresh cream.",
+      "price": "285",
+      "category": "dairy",
+      "image": "https://www.oifood.in/files/products/b2654e6460765d3b44a551a585f13002.jpg",
+      "unit": "500 g"
+    }
+  ]
+}
