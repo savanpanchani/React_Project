@@ -4,7 +4,6 @@ import './App.css';
 import BlinkitHeader from './Components/Header';
 import AddProduct from './Components/AddProduct';
 import EditProduct from './Components/EditProduct';
-import ProductDetails from './Components/ProductDetails';
 import Home from './Components/Home';
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home searchTerm={searchTerm} />} />
         <Route path="/add-product" element={<AddProduct />} />
-         <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/edit-product/:id" element={<EditProduct />} />
         <Route path="*" element={<h2>404 Page Not Found</h2>} />
       </Routes>

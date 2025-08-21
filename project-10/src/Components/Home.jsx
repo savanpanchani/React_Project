@@ -22,7 +22,6 @@ const Home = ({ searchTerm = "" }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-
   const { products = [], isLoading: loading } = useSelector(
     (state) => state.product || {}
   );
@@ -41,9 +40,7 @@ const Home = ({ searchTerm = "" }) => {
   const handleEdit = (id) => navigate(`/edit-product/${id}`);
   const handleDelete = (id) => dispatch(deleteProductAsync(id));
 
-
   const categories = ["All", ...new Set(products.map((p) => p.category).filter(Boolean))];
-
 
   const filteredProducts = products.filter((prod) => {
     const matchesSearch = prod.title
@@ -54,17 +51,14 @@ const Home = ({ searchTerm = "" }) => {
     return matchesSearch && matchesCategory;
   });
 
-
   const sortedProducts = [...filteredProducts].sort((a, b) => {
     let valA = a[sortField];
     let valB = b[sortField];
-
 
     if (sortField === "price" || sortField === "unit") {
       valA = parseFloat(valA) || 0;
       valB = parseFloat(valB) || 0;
     } else {
-      // Alphabetical for title
       valA = valA?.toString().toLowerCase() || "";
       valB = valB?.toString().toLowerCase() || "";
     }
@@ -73,7 +67,6 @@ const Home = ({ searchTerm = "" }) => {
     if (valA > valB) return sortOrder === "asc" ? 1 : -1;
     return 0;
   });
-
 
   const totalPages = Math.ceil(sortedProducts.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -153,10 +146,16 @@ const Home = ({ searchTerm = "" }) => {
                     style={{
                       objectFit: "contain",
                       backgroundColor: "#f8f9fa",
+                      cursor: "pointer",
                     }}
+                    onClick={() => navigate(`/product/${prod.id}`)}
                   />
                   <Card.Body className="d-flex flex-column p-3">
-                    <Card.Title className="fs-6 fw-bold text-truncate">
+                    <Card.Title
+                      className="fs-6 fw-bold text-truncate text-primary"
+                      style={{ cursor: "pointer" }}
+                      onClick={() => navigate(`/product/${prod.id}`)}
+                    >
                       {prod.title}
                     </Card.Title>
                     <Card.Text className="small text-muted mb-2">
@@ -198,7 +197,6 @@ const Home = ({ searchTerm = "" }) => {
             ))}
           </Row>
 
-         
           {totalPages > 1 && (
             <div className="d-flex justify-content-center mt-4">
               <Pagination>
