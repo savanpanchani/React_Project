@@ -165,15 +165,14 @@ const EditProduct = () => {
         </Form.Group>
 
         {/* Image URL */}
-        <Form.Group className="mb-4">
-          <Form.Label className="fw-semibold">Image URL</Form.Label>
-          <Form.Control
-            type="file"
-            placeholder="Enter image URL"
-            name="image"
-            // value={inputForm.image}
-            onChange={handleFileChanged}
-          />
+      <Form.Group className="mb-3">
+            <Form.Label>Upload Image</Form.Label>
+            <Form.Control
+              type="file"
+              name="image"
+              accept="image/*"
+              onChange={handleFileChanged}
+            />
         </Form.Group>
 
         {/* Submit Button */}
