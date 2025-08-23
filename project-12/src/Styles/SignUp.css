@@ -1,0 +1,125 @@
+/* ============================
+   Blinkit-style Auth CSS
+   ============================ */
+
+.auth-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f7da1c 40%, #0f8a65 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-card {
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.brand .logo-pill {
+  display: inline-block;
+  background-color: #0f8a65;
+  color: #fff;
+  font-weight: 700;
+  text-transform: lowercase;
+  padding: 6px 18px;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.field {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+}
+
+.field:focus {
+  border-color: #0f8a65;
+  box-shadow: 0 0 0 0.2rem rgba(15, 138, 101, 0.25);
+}
+
+.toggle-eye {
+  border-radius: 0 12px 12px 0;
+  border-left: none;
+}
+
+.btn-blinkit {
+  background-color: #0f8a65;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: background 0.2s ease-in-out;
+  color: #fff;
+}
+
+.btn-blinkit:hover {
+  background-color: #0c6c51;
+}
+
+.btn-blinkit-outline {
+  background-color: #f7da1c;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: background 0.2s ease-in-out;
+  color: #000;
+}
+
+.btn-blinkit-outline:hover {
+  background-color: #e6c717;
+}
+
+.divider {
+  text-align: center;
+  border-top: 1px solid #eee;
+  position: relative;
+  margin: 20px 0;
+}
+
+.divider span {
+  background: #fff;
+  padding: 0 10px;
+  position: relative;
+  top: -12px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.btn-google {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  color: #444;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+.btn-google:hover {
+  background-color: #f8f8f8;
+  border-color: #ccc;
+}
+
+.link-dark:hover, .link-blinkit:hover {
+  color: #0f8a65 !important;
+}
+
+
+@media (max-width: 576px) {
+  .auth-card {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+
+  .field {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .btn-blinkit, .btn-blinkit-outline, .btn-google {
+    font-size: 0.9rem;
+    padding: 0.65rem;
+  }
+}
