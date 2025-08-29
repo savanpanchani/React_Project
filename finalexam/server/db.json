@@ -1,0 +1,19 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Paneer Tikka",
+      "category": "Indian",
+      "ingredients": "Paneer, Spices, Yogurt",
+      "instructions": "Mix spices with yogurt, marinate paneer, grill till golden."
+    },
+    {
+      "id": 2,
+      "title": "Pasta Alfredo",
+      "category": "Italian",
+      "ingredients": "Pasta, Cream, Cheese",
+      "instructions": "Boil pasta, cook cream sauce, mix with cheese."
+    }
+  ],
+  "users": []
+}

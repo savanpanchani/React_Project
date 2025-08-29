@@ -1,0 +1,6 @@
+{
+  "recipes": [
+    { "id": 1, "title": "Pasta", "ingredients": "Noodles, Sauce", "category": "Italian" },
+    { "id": 2, "title": "Salad", "ingredients": "Lettuce, Tomato", "category": "Healthy" }
+  ]
+}

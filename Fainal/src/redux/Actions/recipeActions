@@ -1,0 +1,35 @@
+// src/redux/Actions/recipeActions.js
+import axios from "axios";
+
+export const FETCH_RECIPES_BY_CATEGORY = "FETCH_RECIPES_BY_CATEGORY";
+
+// Fetch recipes by category
+export const fetchRecipesByCategory = (category) => async (dispatch) => {
+  try {
+    dispatch({ type: "FETCH_RECIPES_REQUEST" });
+    const res = await axios.get("http://localhost:5000/recipes");
+    const filtered = res.data.filter(
+      (recipe) => recipe.category.toLowerCase() === category.toLowerCase()
+    );
+
+    dispatch({
+      type: FETCH_RECIPES_BY_CATEGORY,
+      payload: { category, recipes: filtered },
+    });
+  } catch (error) {
+    dispatch({
+      type: "FETCH_RECIPES_FAIL",
+      payload: error.message,
+    });
+  }
+};
+
+// Delete a recipe (optional)
+export const deleteRecipe = (id) => async (dispatch) => {
+  try {
+    await axios.delete(`http://localhost:5000/recipes/${id}`);
+    dispatch({ type: "DELETE_RECIPE", payload: id });
+  } catch (error) {
+    console.error("Error deleting recipe:", error);
+  }
+};

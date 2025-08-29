@@ -1,0 +1,444 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "JBL Flip 5 Bluetooth Speaker",
+      "desc": "Water-resistant portable speaker with rich sound.",
+      "price": "6999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/speaker/mobile-tablet-speaker/i/m/q/romeo-dynamic-powerful-bass-stereo-sound-rgb-lighting-portable-original-imahbgw9e7fruzan.jpeg?q=70",
+      "category": "Electronics",
+      "quantity": 15
+    },
+    {
+      "id": "2",
+      "name": "Kindle Paperwhite",
+      "desc": "6″ e-reader with built-in light and waterproof.",
+      "price": "9000",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/cases-covers/flip-cover/h/s/o/ea16-magnetic-lock-flip-cover-protective-stand-case-for-kindle-original-imahcqgynvzxgvcz.jpeg?q=70",
+      "category": "Electronics",
+      "quantity": 10
+    },
+    {
+      "id": "3",
+      "name": "Sony WH-1000XM4 Headphones",
+      "desc": "Noise-cancelling over-ear headphones.",
+      "price": "24999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/l1dwknk0/headphone/8/m/r/wh-1000xm4-sony-original-imagcywfzfwjmvbr.jpeg?q=70",
+      "category": "Electronics",
+      "quantity": 8
+    },
+    {
+      "id": "4",
+      "name": "Logitech MX Master 3 Mouse",
+      "desc": "Ergonomic wireless mouse with hyper-fast scroll.",
+      "price": "9499",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/mouse/6/8/1/wired-usb-mouse-with-3-handy-buttons-1500-dpi-ms-0067-frontech-original-imahd6yvzc8vzqdj.jpeg?q=70",
+      "category": "Electronics",
+      "quantity": 12
+    },
+    {
+      "id": "5",
+      "name": "Anker 65W GaN Charger",
+      "desc": "Fast-charging wall charger with USB-C + USB-A.",
+      "price": "3199",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/battery-charger/m/k/d/ch-940-delphine-original-imah7jzz5gwva7dq.jpeg?q=70",
+      "category": "Electronics",
+      "quantity": 20
+    },
+    {
+      "id": "6",
+      "name": "The Silent Patient",
+      "desc": "Psychological thriller by Alex Michaelides.",
+      "price": "399",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/book/8/b/m/the-silient-patient-original-imah6pncgcgstrve.jpeg?q=70",
+      "category": "Books",
+      "quantity": 25
+    },
+    {
+      "id": "7",
+      "name": "Atomic Habits",
+      "desc": "Self-help book by James Clear.",
+      "price": "499",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/book/d/q/y/the-mountain-is-you-atomic-habits-2-book-combo-original-imahbt6y93mxbxrp.jpeg?q=70",
+      "category": "Books",
+      "quantity": 30
+    },
+    {
+      "id": "8",
+      "name": "The Alchemist",
+      "desc": "Inspirational fiction by Paulo Coelho.",
+      "price": "299",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/book/5/e/r/alchemist-original-imahdedby6p5kbhc.jpeg?q=70",
+      "category": "Books",
+      "quantity": 20
+    },
+    {
+      "id": "9",
+      "name": "Harry Potter Box Set",
+      "desc": "Complete 7-book series in one collection.",
+      "price": "2499",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/regionalbooks/w/y/d/harry-potter-1-3-box-set-a-magical-adventure-begins-set-of-3-original-imahb6de3vzznhk6.jpeg?q=70",
+      "category": "Books",
+      "quantity": 15
+    },
+    {
+      "id": "10",
+      "name": "Rich Dad Poor Dad",
+      "desc": "Personal finance classic by Robert Kiyosaki.",
+      "price": "349",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/book/2/g/s/rich-dad-poor-dad-original-imahdbjpesvgfsjr.jpeg?q=70",
+      "category": "Books",
+      "quantity": 18
+    },
+    {
+      "id": "11",
+      "name": "LEGO Star Wars Millennium Falcon",
+      "desc": "Iconic spaceship model with minifigures.",
+      "price": "15999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/block-construction/q/r/q/ninjago-zanes-ice-motorcycle-toy-set-71816-84-blocks-lego-original-imahypfushqzvt3v.jpeg?q=70",
+      "category": "Toys & Baby Products",
+      "quantity": 7
+    },
+    {
+      "id": "12",
+      "name": "Fisher-Price Baby Swing",
+      "desc": "Comfortable infant swing with music.",
+      "price": "4999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/crib-cradle/d/a/3/53-1005-pink-new-cradle-pandaoriginals-110-original-imagqtrhfq4jxmyn.jpeg?q=70",
+      "category": "Toys & Baby Products",
+      "quantity": 5
+    },
+    {
+      "id": "13",
+      "name": "Nerf Elite 2.0 Toy Blaster",
+      "desc": "Motorized foam dart blaster.",
+      "price": "3999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/toy-weapon/i/j/h/blaze-storm-hot-fire-guns-safe-soft-foam-bullets-fun-target-original-imah7x48nj6thg3d.jpeg?q=70",
+      "category": "Toys & Baby Products",
+      "quantity": 12
+    },
+    {
+      "id": "14",
+      "name": "Barbie Dream Camper",
+      "desc": "Mobile home playset for Barbie dolls.",
+      "price": "8999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/kij6f0w0-0/doll-doll-house/p/7/i/beautiful-doll-toy-set-with-movable-joints-and-other-ornaments-original-imafyb5dy7tzszgp.jpeg?q=70",
+      "category": "Toys & Baby Products",
+      "quantity": 4
+    },
+    {
+      "id": "15",
+      "name": "Melissa & Doug Wooden Train Set",
+      "desc": "Classic hardwood railway set.",
+      "price": "2999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/km3s1ow0/vehicle-pull-along/r/s/j/authfort-wooden-alphabet-letters-train-a-z-english-vocabulary-original-imagf2vyapkw8wbw.jpeg?q=70",
+      "category": "Toys & Baby Products",
+      "quantity": 10
+    },
+    {
+      "id": "16",
+      "name": "Nike Dri-FIT T-Shirt",
+      "desc": "Moisture-wicking running tee.",
+      "price": "2499",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/x/s/i/xl-hj3792-010-nike-original-imah7vxywkpygpwb.jpeg?q=70",
+      "category": "Fashion",
+      "quantity": 20
+    },
+    {
+      "id": "17",
+      "name": "Ray-Ban Aviator Sunglasses",
+      "desc": "Timeless UV-protected metal shades.",
+      "price": "7999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/sunglass/c/e/x/-original-imagh95rkzr3yt6n.jpeg?q=70",
+      "category": "Fashion",
+      "quantity": 10
+    },
+    {
+      "id": "18",
+      "name": "Levi’s 501 Jeans",
+      "desc": "Classic straight-fit denim jeans.",
+      "price": "3999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/jean/j/b/v/-original-imagz853qenkegxk.jpeg?q=70",
+      "category": "Fashion",
+      "quantity": 15
+    },
+    {
+      "id": "19",
+      "name": "Adidas Sports Cap",
+      "desc": "Breathable cap for active wear.",
+      "price": "999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/cap/b/h/i/s-ht6356-adidas-original-imahbfr2jxzfbkna.jpeg?q=70",
+      "category": "Fashion",
+      "quantity": 25
+    },
+    {
+      "id": "20",
+      "name": "Timex Weekender Watch",
+      "desc": "Casual analog watch with nylon strap.",
+      "price": "2999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/watch/c/l/2/-original-imagt7fksfacepua.jpeg?q=70",
+      "category": "Fashion",
+      "quantity": 12
+    },
+    {
+      "id": "21",
+      "name": "Yoga Mat",
+      "desc": "Non-slip Pilates/Yoga mat, 6 mm thick.",
+      "price": "999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/sport-mat/j/k/n/yoga-mat-for-men-women-kids-eva-exercise-mat-for-gym-with-cover-original-imah76ft2hgybxne.jpeg?q=70",
+      "category": "Sports & Fitness",
+      "quantity": 20
+    },
+    {
+      "id": "22",
+      "name": "Dumbbell Set",
+      "desc": "Pair of 2 kg neoprene dumbbells.",
+      "price": "499",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/dumbbell/k/k/c/0kg-2kg-x-4-3kg-x-4-dumbbell-combo-set-adjustable-dumbbell-20-original-imagyqyuw9sucgba.jpeg?q=70",
+      "category": "Sports & Fitness",
+      "quantity": 15
+    },
+    {
+      "id": "23",
+      "name": "Resistance Bands",
+      "desc": "Set of 4 latex exercise bands.",
+      "price": "399",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/resistance-tube/z/d/o/-original-imah8beph7eyyhwf.jpeg?q=70",
+      "category": "Sports & Fitness",
+      "quantity": 10
+    },
+    {
+      "id": "24",
+      "name": "Wilson Football",
+      "desc": "Size‑5 PU football for match play.",
+      "price": "499",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/ball/q/r/9/420-470-storm-white-moulded-football-with-ball-pump-5-9967-original-imagt6zxwhfrcvez.jpeg?q=70",
+      "category": "Sports & Fitness",
+      "quantity": 18
+    },
+    {
+      "id": "25",
+      "name": "Tennis Racquet",
+      "desc": "Caster aluminium frame with grip.",
+      "price": "1299",
+      "image": "https://rukminim2.flixcart.com/image/612/612/l3nco7k0/racquet/f/z/n/g4-11-43-cm-strung-vxt-520-27-inches-senior-with-full-cover-original-imageqff7nh6bhvg.jpeg?q=70",
+      "category": "Sports & Fitness",
+      "quantity": 7
+    },
+    {
+      "id": "26",
+      "name": "Rice (5 kg)",
+      "desc": "Premium Basmati rice pack.",
+      "price": "399",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/rice/g/p/4/-original-imah8xxmcrxnkykc.jpeg?q=70",
+      "category": "Grocery",
+      "quantity": 50
+    },
+    {
+      "id": "27",
+      "name": "Olive Oil (500 ml)",
+      "desc": "Extra virgin olive oil.",
+      "price": "499",
+      "image": "https://rukminim2.flixcart.com/image/612/612/js4yljk0/edible-oil/8/5/h/500-fig500-tin-olive-oil-figaro-original-imafdptvngcbqak8.jpeg?q=70",
+      "category": "Grocery",
+      "quantity": 40
+    },
+    {
+      "id": "28",
+      "name": "Organic Honey",
+      "desc": "Pure raw honey jar, 500 g.",
+      "price": "699",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/honey/j/r/7/-original-imahfqpywgmqbcb5.jpeg?q=70",
+      "category": "Grocery",
+      "quantity": 30
+    },
+    {
+      "id": "29",
+      "name": "Whole Wheat Flour (1 kg)",
+      "desc": "Stone‑ground atta.",
+      "price": "49",
+      "image": "https://rukminim2.flixcart.com/image/612/612/kvr01ow0/flour/4/s/x/500-premium-quality-wheat-flour-500-gm-packing-1-whole-wheat-original-imag8kxta7x3kshf.jpeg?q=70",
+      "category": "Grocery",
+      "quantity": 100
+    },
+    {
+      "id": "30",
+      "name": "Instant Coffee Jar",
+      "desc": "Rich aroma 200 g jar.",
+      "price": "299",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/coffee/k/e/f/100-caf-espresso-57-intense-instant-ground-coffee-jar-100-g-original-imah4myfzqhhzq6r.jpeg?q=70",
+      "category": "Grocery",
+      "quantity": 45
+    },
+    {
+      "id": "31",
+      "name": "LED Table Lamp",
+      "desc": "Touch-control bedside lamp.",
+      "price": "499",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/table-lamp/6/b/r/touch-control-multifunctional-led-lamp-with-eye-protect-mobile-original-imah6g7t3rkmjfuv.jpeg?q=70",
+      "category": "Home & Furniture",
+      "quantity": 20
+    },
+    {
+      "id": "32",
+      "name": "Memory Foam Pillow",
+      "desc": "Orthopedic pillow for neck support.",
+      "price": "699",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/pillow/s/3/h/12-cervical-butterfly-pillow-orthopedic-memory-foam-pillow-for-original-imahbwjzcykfu4as.jpeg?q=70",
+      "category": "Home & Furniture",
+      "quantity": 12
+    },
+    {
+      "id": "33",
+      "name": "Curtain Set",
+      "desc": "Pair of blackout curtains.",
+      "price": "899",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/curtain/6/v/i/patch-floral-blossoms-patch001354dr-door-eyelet-fashion-string-original-imagpb3nreuzhmzr.jpeg?q=70",
+      "category": "Home & Furniture",
+      "quantity": 8
+    },
+    {
+      "id": "34",
+      "name": "Wooden Coffee Table",
+      "desc": "Solid wood center table.",
+      "price": "6999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/coffee-table/b/i/c/55-88-rosewood-sheesham-55-88-9-pr-ct-409-pr-furniture-58-42-original-imahbzge8uvdtraj.jpeg?q=70",
+      "category": "Home & Furniture",
+      "quantity": 5
+    },
+    {
+      "id": "35",
+      "name": "Stainless Steel Cookware Set",
+      "desc": "5-piece kitchen set.",
+      "price": "3999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-casserole/q/d/8/1-stainless-steel-cassrole-1500-ml-mithali-original-imagy97prrjgxztc.jpeg?q=70",
+      "category": "Home & Furniture",
+      "quantity": 7
+    },
+    {
+      "id": "36",
+      "name": "Shampoo (200 ml)",
+      "desc": "Herbal anti-dandruff shampoo.",
+      "price": "199",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shampoo/r/3/b/200-australian-tea-tree-hair-shampoo-for-dandruff-itchy-scalp-original-imahd5xjztyktfpy.jpeg?q=70",
+      "category": "Beauty & Personal Care",
+      "quantity": 25
+    },
+    {
+      "id": "37",
+      "name": "Perfume (100 ml)",
+      "desc": "Long-lasting eau de toilette.",
+      "price": "599",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/perfume/o/w/6/100-hamilton-imperial-perfume-100-ml-eau-de-parfum-denver-men-original-imah374ugxbmkedv.jpeg?q=70",
+      "category": "Beauty & Personal Care",
+      "quantity": 10
+    },
+    {
+      "id": "38",
+      "name": "Body Lotion",
+      "desc": "Moisturizing lotion, 500 ml.",
+      "price": "399",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/moisturizer-cream/j/k/l/-original-imah22yvfwbfpgpa.jpeg?q=70",
+      "category": "Beauty & Personal Care",
+      "quantity": 15
+    },
+    {
+      "id": "39",
+      "name": "Facial Cleanser",
+      "desc": "Gentle daily face wash.",
+      "price": "299",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/face-wash/r/b/l/100-potato-face-wash-hollyhoq-original-imahd7hb7q6y2y9f.jpeg?q=70",
+      "category": "Beauty & Personal Care",
+      "quantity": 20
+    },
+    {
+      "id": "40",
+      "name": "Hair Oil (200 ml)",
+      "desc": "Nourishing coconut-almond blend.",
+      "price": "249",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/hair-oil/c/t/b/200-rosemary-tea-tree-coconut-hair-oil-hair-growth-anti-dandruff-original-imah4frym9ejgrmv.jpeg?q=70",
+      "category": "Beauty & Personal Care",
+      "quantity": 30
+    },
+    {
+      "id": "41",
+      "name": "Electric Kettle",
+      "desc": "1.5 L fast boil electric kettle.",
+      "price": "2499",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/electric-kettle/q/i/o/electric-kettle-1-5-litre-electric-kettle-stainless-steel-original-imaguzjyehmejutb.jpeg?q=70",
+      "category": "Home & Furniture",
+      "quantity": 10
+    },
+    {
+      "id": "43",
+      "name": "Gaming Keyboard",
+      "desc": "RGB mechanical wired keyboard.",
+      "price": "3999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/keyboard/gaming-keyboard/n/i/i/gk320-hp-original-imah32hynmghxtgp.jpeg?q=70",
+      "category": "Electronics",
+      "quantity": 9
+    },
+    {
+      "id": "44",
+      "name": "Kids Bicycle",
+      "desc": "12″ training bike with basket.",
+      "price": "3999",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/cycle/k/o/l/kids-cycles-popees-for-boys-and-girls-age-group-2-5-years-semi-original-imahbynnrb2czu85.jpeg?q=70",
+      "category": "Sports & Fitness",
+      "quantity": 6
+    },
+    {
+      "id": "45",
+      "name": "Backpack",
+      "desc": "Water-resistant 20 L school backpack.",
+      "price": "1499",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/backpack/f/i/6/laptop-backpack-bagpack-school-college-travel-office-bag-black-original-imahaq4gdtfygsbw.jpeg?q=70",
+      "category": "Fashion",
+      "quantity": 22
+    },
+    {
+      "id": "46",
+      "name": "Scented Candles Set",
+      "desc": "Pack of 3 relaxing aroma candles.",
+      "price": "799",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/candle/j/y/j/jasmine-home-decor-mood-relaxing-scented-candle-soy-wax-candle-original-imahyak8uqhyhyff.jpeg?q=70",
+      "category": "Home & Furniture",
+      "quantity": 13
+    },
+    {
+      "id": "47",
+      "name": "Protein Powder",
+      "desc": "Chocolate whey protein 1 kg.",
+      "price": "2499",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/protein-supplement/g/b/w/-original-imahbgfcmubzutav.jpeg?q=70",
+      "category": "Grocery",
+      "quantity": 20
+    },
+    {
+      "id": "48",
+      "name": "Makeup Remover Wipes",
+      "desc": "Gentle wipes, pack of 50.",
+      "price": "199",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/make-up-remover/g/h/z/-original-imahcyy66uksknny.jpeg?q=70",
+      "category": "Beauty & Personal Care",
+      "quantity": 18
+    },
+    {
+      "id": "49",
+      "name": "Kids Educational Puzzle",
+      "desc": "Wooden world map puzzle.",
+      "price": "699",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/puzzle/c/t/g/52-best-baby-gift-happy-home-house-educational-learning-creative-original-imah7mhjhq2ezy49.jpeg?q=70",
+      "category": "Toys & Baby Products",
+      "quantity": 14
+    },
+    {
+      "id": "53",
+      "name": "Rise",
+      "price": "200",
+      "category": "Grocery",
+      "desc": "Rice",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKZbWveTRDdK_wjGJ_yvdbSRirThPKeRS6TQ&s"
+    }
+  ]
+}

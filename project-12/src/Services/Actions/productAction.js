@@ -5,6 +5,7 @@ import { db } from '../../firebaseConfig';
 // const API_URL = "http://localhost:3000/products";
 
 // ------------------ Basic Action Creators ------------------ //
+
 export const loading = () => ({ 
   type: "LOADING",
 });
@@ -58,6 +59,17 @@ export const getAllProductAsync = () => {
         
     }
 }
+  const handleEdit = (id) => {
+  requireLogin(() => navigate(`/edit-product/${id}`));
+  };
+
+  const handleDelete = (id) => {
+  requireLogin(() => {
+    if (window.confirm("Are you sure you want to delete this product?")) {
+      dispatch(deleteProductAsync(id));
+    }
+  });
+  };
 
 // Add new product
 export const addProductAsync = (data) => {
@@ -110,7 +122,6 @@ export const updateProductAsync = (data) => {
     dispatch(loading());
         try {
             await updateDoc(doc(db, "products", data.id), data)
-            // console.log(res);
             dispatch(updateProduct());
         } catch (error) {
             console.log(error);

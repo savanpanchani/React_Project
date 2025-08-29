@@ -49,14 +49,17 @@ const handleEdit = (id) => {
     navigate(`/edit-product/${id}`);
   };
 
-  const handleDelete = (id) => {
-    if (!isLoggedIn) {
-      alert("You must sign in to delete a product.");
-      navigate("/signIn");
-      return;
-    }
+ const handleDelete = (id) => {
+  if (!user) {   
+    alert("You must sign in to delete a product.");
+    navigate("/signIn");
+    return;
+  }
+
+  if (window.confirm("Are you sure you want to delete this product?")) {
     dispatch(deleteProductAsync(id));
-  };
+  }
+};
 
   const categories = ["All", ...new Set(products.map((p) => p.category).filter(Boolean))];
 
